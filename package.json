@@ -1,0 +1,44 @@
+{
+  "name": "tic-tac-toe-ai",
+  "version": "0.0.1",
+  "description": "Simple Tic-Tac-Toe game against an AI. This is made to improve and better understand the Minimax Algorithm.",
+  "scripts": {
+    "dev": "live-server .",
+    "lint": "eslint --ext .js --ignore-path .gitignore ."
+  },
+  "keywords": [
+    "ai",
+    "tic tac to",
+    "html",
+    "javascript",
+    "css"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EdwardKerckhofZoneDev/tic-tac-toe-ai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EdwardKerckhofZoneDev/tic-tac-toe-ai/issues"
+  },
+  "homepage": "https://github.com/EdwardKerckhofZoneDev/tic-tac-toe-ai#readme",
+  "private": false,
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "live-server": "^1.2.1",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": "eslint --fix",
+    "*": "prettier -w -u"
+  }
+}
